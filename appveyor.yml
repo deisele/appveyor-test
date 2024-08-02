@@ -1,7 +1,7 @@
 version: 1.0.{build}
 
-build_cloud: ubuntu Docker
-image: Linux
+build_cloud: DESKTOP-RSNHS15
+image: Windows
 
 install:
 - cmd: |
