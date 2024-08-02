@@ -1,5 +1,8 @@
 version: 1.0.{build}
 
+build_cloud: ubuntu
+image: Linux
+
 install:
 - cmd: |
     if exist C:\sierra\ SET cached=true
