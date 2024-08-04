@@ -6,24 +6,24 @@ image: Windows
 environment:
   secret_aba123:
     secure: 7F9X0T87RwWzK1gdOFm8mg==
-  qwertzxyz:
+  secret_qwertzxyz:
     secure: IbV29U5DkIKx4h8y9XgeVQ==
 
 build_script:
 - cmd: |
-    echo "Secret 1:"
+    echo Secret 1:
     echo %secret_aba123%
-    echo ""
-    echo "Secret 2:"
-    echo %qwertzxyz%
-    echo ""
-    echo "Test 1:"
+    echo 
+    echo Secret 2:
+    echo %secret_qwertzxyz%
+    echo 
+    echo Test 1:
     echo ab%secret_aba123%
-    echo ""
-    echo "Test 2:"
-    echo "qwe"
-    echo "x"
-    echo "f"
+    echo 
+    echo Test 2:
+    echo qwe
+    echo x
+    echo f
 
 artifacts:
 - path: temperature_converter_example\TempConv.9xk
